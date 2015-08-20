@@ -26,3 +26,10 @@
  /src/admin/js/components/*.vue
 
  /src/admin/js/components/public/*.vue
+
+#开始
+npm install gulp gulp-sass gulp-tmod gulp-minify-html gulp-minify-css gulp-autoprefixer gulp-jshint gulp-uglify gulp-imagemin imagemin-pngquant gulp-rename gulp-clean gulp-rev gulp-concat gulp-cache gulp-notify gulp-util gulp-plumber url gulp-browserify browser-sync proxy-middleware vueify yargs gulp-if node-sass postcss autoprefixer-core --save-dev
+
+gulp watch
+
+然后就可以了
