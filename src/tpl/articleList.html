@@ -1,0 +1,23 @@
+<ul>
+    {{each list}}
+    <li class="article-img">
+        <a class="wrap-img" href="/#/article/detail/{{$value.id}}"><div class="bg" style="background-image:url({{$value.cover}})"></div></a>
+        <div class="wrap-text">
+            <p class="list-top">
+                <a href="" class="author-name">{{$value.author}}</a>
+                <em>·</em>
+                <span class="time" title="{{$value.time}}">{{$value.time | dateDiff}}</span>
+            </p>
+            <h4 class="title"><a href="/#/article/detail/{{$value.id}}">{{$value.title}}</a></h4>
+            <div class="list-footer">
+                <a href="/#/article/detail/{{$value.id}}">阅读 {{$value.read}}</a>
+                <em>·</em>
+                <a href="/#/article/detail/{{$value.id}}">喜欢 {{$value.like}}</a>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+<nav class="text-center">
+    <div class="pagination" style="margin-top:30px;">{{#total | paging: page, cate}}</div>
+</nav>
